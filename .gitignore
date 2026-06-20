@@ -1,11 +1,10 @@
 # Terraform
-.terraform/
+terraform/.terraform/
 *.tfstate
-*.tfstate.*
-terraform.tfstate.backup
+*.tfstate.backup
 
 # Terraform crash logs
 crash.log
 
-# OS files
+# OS
 .DS_Store
