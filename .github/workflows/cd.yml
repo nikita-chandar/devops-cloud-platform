@@ -17,17 +17,7 @@ jobs:
 
     - name: Deploy to EC2
       uses: appleboy/ssh-action@v1.0.3
-  GNU nano 8.3                                                  .github/workflows/cd.yml                                                   Modified  
-
-  deploy:
-
-    runs-on: ubuntu-latest
-
-    steps:
-
-    - name: Deploy to EC2
-      uses: appleboy/ssh-action@v1.0.3
-    
+      
     with:
       host: ${{ secrets.EC2_host}}
       username: ${{ secrets.EC2_USER }}
