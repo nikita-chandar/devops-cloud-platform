@@ -1,0 +1,23 @@
+name: Devops CD Pipeline
+
+on:
+ workflow_run:
+   workflows:
+     - Devops CI Pipeline
+   types:
+     - completed
+
+jobs:
+
+  deploy:
+ 
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Deploy to EC2
+      uses: appleboy/ssh-action@v1.0.3
+
+     with:
+       host: ${{ secrets.EC2_HOST }}
+
