@@ -12,3 +12,4 @@ This project demonstrates a complete DevOps workflow using:
 ## Architecture
 
 Code -> GitHub -> CI/CD -> Docker -> AWS -> Kubernetes
+CD Test
